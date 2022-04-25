@@ -1,0 +1,7 @@
+@media all and (max-width: 800px){
+    .parent{
+      height: 200px;
+      width: 200px;
+      background: violet;
+    }
+}

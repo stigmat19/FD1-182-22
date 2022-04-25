@@ -1,0 +1,7 @@
+@media all and (max-width: 600px){
+    .parent{
+      height: 200px;
+      width: 50%;
+      background: aqua;
+    }
+}
