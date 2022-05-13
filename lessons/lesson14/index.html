@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://fe.it-academy.by/TestForm.php" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>hello</legend>
+            <label for="test1">input2</label>
+            <select name="test[]" multiple size="2">
+                <option value="1">one</option>
+                <option value="2">two</option>
+                <option value="3" disabled>three</option>
+            </select>
+            <br>
+            <label>
+                <input type="radio" name="q"> test1 
+            </label>
+            <label>
+                <input type="radio"  name="q"> test2 
+            </label>
+            <label>
+                <input type="radio"  name="q"> test3 
+            </label>
+             <br>
+            <input type="text" id="test1"> <br>
+            <button type="submit">
+                <img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Send-email.svg/1280px-Send-email.svg.png" alt="">
+            </button>
+        </fieldset>
+      
+    </form>
+    </body>
+</html>
