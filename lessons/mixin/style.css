@@ -1,0 +1,19 @@
+.btn1 {
+  width: 200px;
+  height: 50px;
+  background-color: #c43434;
+  color: blue; }
+  @media all and (max-width: 1000px) {
+    .btn1 {
+      width: 500px;
+      height: 100px;
+      background-color: aqua;
+      color: black; } }
+
+.btn2 {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  color: violet; }
+
+/*# sourceMappingURL=style.css.map */

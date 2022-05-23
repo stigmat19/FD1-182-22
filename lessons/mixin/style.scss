@@ -1,0 +1,25 @@
+
+$red: #c43434;
+@mixin btn($w,$h,$bgColor, $color) {
+    width: $w;
+    height: $h;
+    background-color: $bgColor;
+    color: $color;
+}
+
+@mixin media($w) {
+    @media all and (max-width: $w) {
+        @content;
+    }
+}
+
+.btn1{
+    @include btn(200px, 50px, $red  , blue);
+
+    @include media(1000px){
+        @include btn(500px, 100px, aqua, black);
+    }
+}
+.btn2{
+    @include btn(300px, 100px, yellow, violet);
+}

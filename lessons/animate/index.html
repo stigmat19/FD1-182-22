@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+
+    <STYLE>
+        .animate__animated.animate__bounce {
+  --animate-duration: 10s;
+}
+#cut-diamond {
+      border-style: solid;
+      border-color: transparent transparent red transparent;
+      border-width: 0 25px 25px 25px;
+      height: 0;
+      width: 50px;
+      box-sizing: content-box;
+      position: relative;
+      margin: 20px 0 50px 0;
+    }
+    #cut-diamond:after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: -25px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: red transparent transparent transparent;
+      border-width: 70px 50px 0 50px;
+    }
+    </STYLE>
+</head>
+<body>
+    <h1 id="cut-diamond" class="animate__animated animate__bounce ">An animated element</h1>
+</body>
+</html>

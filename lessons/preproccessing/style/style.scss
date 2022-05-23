@@ -1,0 +1,30 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.wrap{
+    width: 600px;
+    height: 600px;
+    background-color: $color;
+    -moz-transform: scale(0.8) rotate(111deg) translate(25px, 13px) skew(31deg, 24deg);
+-webkit-transform: scale(0.8) rotate(111deg) translate(25px, 13px) skew(31deg, 24deg);
+-o-transform: scale(0.8) rotate(111deg) translate(25px, 13px) skew(31deg, 24deg);
+-ms-transform: scale(0.8) rotate(111deg) translate(25px, 13px) skew(31deg, 24deg);
+transform: scale(0.8) rotate(111deg) translate(25px, 13px) skew(31deg, 24deg);
+    @include media(1000px){
+        background-color: $yellow;
+    }
+    @include media(800px){
+        background-color: aqua;
+    }
+}
+.button{
+    @include ttt(100px, 50px, $blue);
+}
+
+span{
+    display: flex;
+    user-select: none;
+    @include ttt(200px, 100px, red);
+    display: inline-block;
+}
+

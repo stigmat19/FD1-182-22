@@ -1,0 +1,14 @@
+@mixin media($w)
+{
+    @media only screen and (max-width: $w)
+    {
+        @content;
+    }
+}
+
+@mixin ttt($w, $h, $color) {
+    background: $color;
+    width: $w;
+    height: $h;
+    border-radius: 50px;
+}
