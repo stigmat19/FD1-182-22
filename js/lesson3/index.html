@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+        div{
+            
+            width: 500px;
+            transition: 0.5s;
+        }
+        input[type="text"]{
+
+        }
+        div ul li:first-child a:visited:hover{
+
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn">red</button>
+    <button onclick="changeColor('green')">green</button>
+    <button onclick="changeColor('blue')">blue</button>
+
+    <div class="test" title="hello">
+        hello1
+    </div>
+    <div  class="test" title="hello">
+        hello2
+    </div>
+
+    <input type="text">
+    <input type="email">
+
+    <a href="https://www.onliner.by/" id="link" onclick="linkTo()">onliner</a>
+
+    <script>
+
+       function Car(model, brand, color) {
+            this.model = model;
+            this.brand = brand;
+            this.color = color;
+
+            this.start = function(){
+                console.log("car is start");
+            }
+       }
+
+       var car1 = new Car('Q8', "Audi", "white");
+       var car2 = new Car('X3', "BMW", "black");
+
+       car1.isNew = true;
+
+       car2.second = true;
+
+       function changeColor(color) {
+        var div = document.getElementById("app");
+        div.style.background = color;
+        div.style.width = "700px"
+       }
+
+       function linkTo(){
+           var a = document.getElementById('link');
+           a.href = 'https://www.av.by/'
+       }
+
+       var a = 'hello world'
+
+       var test = document.querySelectorAll('.test');
+       test[0].innerHTML = '<strong><em>'+ a + '</em></strong>';
+
+       var btn = document.querySelector('#btn');
+       btn.addEventListener('click', function(){
+        this.innerHTML = `<h1>${test}</h1>`;
+       })
+
+    </script>
+</body>
+</html>
